@@ -1,17 +1,55 @@
-# allons_au_cinema
+# Jouons à Pong - TP N°3
 
-A new Flutter project.
+## Description
 
-## Getting Started
+Ce projet est une application mobile Flutter permettant de découvrir les films actuellement à l’affiche.
+L’application consomme l’API publique TMDB (The Movie Database) pour afficher les films, leurs informations détaillées et permettre une recherche dynamique.
 
-This project is a starting point for a Flutter application.
+### L’utilisateur peut :
+- Voir la liste des films à l’affiche
+- Rechercher un film en temps réel via une barre de recherche
+- Trier les films par note, date, titre (croissante ou décroissante)
+- Accéder aux détails d’un film (résumé, affiche, note, date de sortie)
 
-A few resources to get you started if this is your first Flutter project:
+### Fonctionnalités principales :
+- Intégration de l’API TMDB
+- Affichage dynamique des films à l’affiche
+- Barre de recherche réactive (mise à jour automatique à la saisie)
+- Tri par note, date, titre (ascendant / descendant) 
+- Fiche film avec image, description, note et date de sortie
+- Interface simple, responsive et épurée
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# allons_au_cinema_td5
+## Structure du projet
+
+```env
+├── lib/
+│   ├── main.dart                   # Point d’entrée de l’application
+│   ├── helpers/
+│   │   └── http_helper.dart        # Gestion des requêtes HTTP vers l’API TMDB
+│   ├── modeles/
+│   │   └── film.dart               # Modèle de données Film
+│   ├── pages/
+│   │   ├── liste_films.dart        # Page d’accueil avec liste et recherche de films
+│   │   └── detail_film.dart        # Page de détails d’un film sélectionné
+├── pubspec.yaml                    # Dépendances et configuration Flutter                 # Dépendances et configuration Flutter
+```
+## Installation
+
+1. **Clonez le projet** :
+
+```bash
+git clone https://github.com/EnideDj/allons_au_cinema_td5
+```
+2.	Installez les dépendances :
+```bash
+flutter pub get
+```
+3.	Exécutez l’application :
+      Pour exécuter l’application sur un émulateur ou un appareil physique, utilisez la commande suivante :
+```bash
+flutter run
+```
+
+## ENIDE DJENDER - FISA-TI-27 - IMT NORD EUROPE
